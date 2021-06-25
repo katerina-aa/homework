@@ -9,4 +9,3 @@ end
 bit_number = number.to_s(2)
 answer = bit_number.to_s().count("1")
 print 'Количество 1 в битовом представление Вашего числа: ' + answer.to_s
-

@@ -3,3 +3,4 @@ print 'Введите год Вашего рождения(четырехзна�
 user_year = gets.chomp().to_i
 age = current_year - user_year
 print 'Ваш возраст: ' + age.to_s + '!'
+
