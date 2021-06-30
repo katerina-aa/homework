@@ -5,7 +5,6 @@ if user_string.empty?
     print ' '
 else 
     array_worlds = user_string.split
-
     for i in 1..9
         array_worlds.each do |world|
             if world.include? i.to_s
@@ -14,5 +13,3 @@ else
         end    
     end
 end
-
-

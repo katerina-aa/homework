@@ -1,4 +1,3 @@
-
 paint_can = 16
 
 def input_less_1000(word)
@@ -23,4 +22,4 @@ height = input_less_1000('высоту')
 area = 2 * height * (length  + width)
 number_of_cans = area.to_f / paint_can
 
-puts 'Количество банок краски: ' + number_of_cans.round(0).to_s
+puts 'Количество банок краски: ' + number_of_cans.ceil.to_s

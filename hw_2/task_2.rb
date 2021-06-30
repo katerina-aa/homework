@@ -1,3 +1,4 @@
+
 def input_less_100(word)
 
     print 'Введите ' + word 
@@ -28,7 +29,3 @@ for i in 0..2
 end
 
 print 'Поздравляем! Вы можете заработать ' + sum.to_s + ' рублей!'
-
-
-
-
