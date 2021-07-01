@@ -1,3 +1,4 @@
+
 answer =  0
 print 'Введите строку --> '
 user_string = gets.chomp.downcase

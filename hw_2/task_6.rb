@@ -1,3 +1,4 @@
+
 print 'Введите Вашу строку: '
 user_string = gets.chomp
 

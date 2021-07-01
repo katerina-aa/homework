@@ -1,3 +1,4 @@
+
 paint_can = 16
 
 def input_less_1000(word)

@@ -22,8 +22,9 @@ for i in 0..2
 end
 
 sum = 0
-price.sort
-load_weidht.sort
+price.sort!
+load_weidht.sort!
+
 for i in 0..2
     sum += price[i].to_i * load_weidht[i].to_i
 end
