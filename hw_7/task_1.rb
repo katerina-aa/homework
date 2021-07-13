@@ -593,17 +593,29 @@ def lowest_lat_lon arr
 end
 #p lowest_lat_lon events
 
-def highest_lat arr
-
+def highest_lat arr       
+    answer = []
+    arr.each{ |elem|  answer << elem["loc_lat"].to_f if elem["loc_lat"].to_f > 0  }
+    return answer.max 
 end
+#p highest_lat events
 
-def highest_lon_lat arr
-
+def highest_lon arr
+    answer = []
+    arr.each{ |elem|  answer << elem["loc_lon"].to_f if elem["loc_lon"].to_f > 0  }
+    return answer.max 
 end
+#p highest_lon events
+
 
 def highest_lat_lon arr
-
+    answer = []
+    high_lon = highest_lon arr
+    high_lat = highest_lat arr
+    arr.each{ |elem| answer << elem if elem["loc_lat"].to_f == high_lat or elem["loc_lon"].to_f == high_lon}
+    return answer
 end
+#p highest_lat_lon events
 
 def events_per_year arr
 
